@@ -2,65 +2,78 @@
 
 ## Introduction
 
-As a recent graduate looking to enter a highly competitive job market, I've found that standing out among hundreds of applicants requires more than just good grades and relevant internships. Informational interviews and genuine networking have become critical to my job search strategy, providing insights, potential referrals, and opportunities to learn from professionals in my desired fields.
-
-However, effective networking—while essential—is highly time-consuming. I've created this project to streamline my personal networking workflow using AI, making it easier for me to engage meaningfully and consistently without sacrificing quality or authenticity.
+As a recent graduate looking to enter a highly competitive job market, I've found that standing out among hundreds of applicants requires more than just good grades and relevant internships. Informational interviews and genuine networking have become critical to my job search strategy, providing insights, potential referrals, and opportunities to learn from professionals. In addition, I found that once I got over the initial hump of self-consciousness, networking is an amazing way to meet and learn from incredible people - and it's genuinely super fun.
 
 ## Problem
 
-I've experienced firsthand how challenging and repetitive the networking process can be:
-- **Personalized Communication:** Crafting genuine, tailored messages takes significant effort.
-- **Research & Preparation:** Each conversation requires careful research and detailed preparation.
-- **Organization:** Keeping track of outreach, follow-ups, and conversation notes becomes cumbersome and time-intensive.
+However, effective networking—while essential—is highly time-consuming and repetitive. For me, it involves:
+- **Personalized Communication:** Crafting genuine, tailored messages.
+- **Research & Preparation:** Carefully researching the person and company and preparing my goals and questions for the meeting.
+- **Organization:** Keeping track of outreach, follow-ups, and conversation notes.
 
 Managing these steps manually can lead to inefficiencies, inconsistencies, and missed opportunities.
 
 ## Project Objective
 
-I built an AI-powered networking assistant specifically to enhance my workflow by automating repetitive tasks while maintaining my authentic style. The AI-generated content mimics my personal writing tone—informal, enthusiastic, inquisitive, appreciative, and professional.
+I've created this project to streamline my personal networking workflow using AI, making it easier for me to engage meaningfully and consistently without sacrificing quality or authenticity.
+
+I'm also using this project as an opportunity to try out different AI tools from pre-built solutions like OpenAI's GPTs to using Cursor to build completely from scratch. Therefore, as you will notice in this repository and readme, I have created three separate solutions - each with its own folder and section in the readme below.
 
 ## My Current Workflow
 
-My existing networking process involves:
-1. **Identifying Connections:** Searching for alumni or relevant professionals at target companies.
-2. **Initial Outreach:** Sending personalized LinkedIn messages.
+First, since everyone's networking process is a little different, here is a quick description of my existing networking process:
+
+1. **Identifying Connections:** Searching for alumni or relevant professionals at target companies using alumni portals, LinkedIn, and family/friends.
+2. **Initial Outreach:** Sending personalized LinkedIn messages, texts, or emails. This typically requires researching the person's career path and current company/role.
 3. **Conversation Preparation:** Creating detailed guides for each conversation, including personalized introductions, tailored questions, and comprehensive background research.
-4. **Conducting Conversations:** Engaging in thoughtful discussions and capturing detailed notes.
+4. **Conducting Conversations:** Engaging in thoughtful discussions and capturing detailed notes - typed or by hand.
 5. **Follow-ups:** Organizing conversation summaries and sending timely thank-you messages.
 
 While effective, this process is labor-intensive and repetitive.
 
-## My AI-Powered Solution
-
-To improve efficiency without losing authenticity, I've designed an AI-powered agent to automate significant portions of my networking workflow:
-
 ### My Desired Workflow
 
+After some experimenting and process mapping, I developed the following vision for my networking workflow.
+
 1. **Profile Upload (Manual):** I manually upload a PDF of the target person's LinkedIn profile.
-2. **AI Analysis:** The agent analyzes the profile for key insights.
-3. **Personalized Message Generation:** The AI generates a draft outreach message reflecting my style.
-4. **Review and Approval (Manual):** I review and approve the personalized message.
-5. **Message Sending (Manual):** I manually send the approved message via LinkedIn.
-6. **Scheduling Conversations (Manual):** I manage scheduling interactions manually.
-7. **Conversation Preparation (AI-automated):** The agent generates a detailed, personalized "Conversation Prep Guide."
-8. **Documentation (AI-automated):** Automatically saves the preparation guide as a Google Doc and updates my Google Sheets tracking.
-9. **Post-Conversation Summary (AI-automated):** The AI creates a summary of the conversation and updates my tracker.
-10. **Follow-Up Reminder (AI-automated):** If a thank-you message hasn't been sent within 12 hours post-conversation, the agent reminds me via email.
+2. **AI Analysis (Automated):** The agent analyzes the profile for key insights.
+3. **Personalized Message Generation (Automated):** The AI generates a draft outreach message consistent with my personal writing style.
+4. **Review and Send (Manual):** I review the personalized message (make edits if needed) and send via LinkedIn, text, email, etc
+5. **Scheduling Conversations (Hybrid):** If needed and when prompted, the agent helps draft follow up messages to schedule the meeting. I manually choose the date/time and add it to my calendar (I'm very particular about my calendar and I haven't found any AI calendar integrations that are good enough yet).
+6. **Conversation Preparation (Automated):** The agent generates a detailed, personalized "Conversation Prep Guide that contains goals, an "about me" section, thoughtful questions, and different ways to wrap up the meeting based on the direction of the conversation."
+7. **Note Taking (Automated):** If the call is online or over the phone and with the connection's consent, the AI agent will transcribe the conversation and automatically generate notes, takeaways and action items.
+8. **Post-Conversation Summary and Thank You Notes (Automated):** The AI creates a summary of the conversation and drafts a short, personalized thank you note or follow up message.
+9. **Follow-Up Reminder (Automated):** If a thank-you message hasn't been sent within 12 hours post-conversation, the agent reminds me via email.
+10. **Documentation (Automated):** Throughout the process, the agent automatically updates a tracking table in Google Sheets.
 
-## Technologies Used
-- **OpenAI Custom GPT:** Personalized messaging and preparation. [Networking Agent Custom GPT](https://chatgpt.com/g/g-67cc8aab4f28819191b8e061b0f5e91f-networking-agent)
-- **Google Workspace (Drive & Sheets):** Automated documentation and organization.
-- **Future Integration:** Potential workflow automation with n8n and LinkedIn integration.
+## The Three Approaches I am Taking:
 
-## Key Considerations
-- **Maintaining Authenticity:** Ensuring each message reflects my genuine voice.
-- **Quality over Speed:** Prioritizing thoughtful, respectful, and meaningful interactions.
+1. **OpenAI Custom GPT:** [Networking Agent Custom GPT](https://chatgpt.com/g/g-67cc8aab4f28819191b8e061b0f5e91f-networking-agent)
+
+- Prompt: 
+- Knowledge Base:
+- Pros:
+- Cons:
+
+2. **n8n Agentic Workflow:**
+
+- Prompt:
+- Knowledge Base:
+- Pros:
+- Cons:
+
+3. **Local web app developed using Cursor:**
+
+- Prompt:
+- Knowledge Base:
+- Pros:
+- Cons:
 
 ## Future Improvements
 
-- **Direct LinkedIn API Integration:** Automating message sending.
-- **Enhanced AI Personalization:** Continuously fine-tuning the AI model to better reflect my communication style.
-- **Integrated Workflow Management:** Streamlining follow-ups and reminders further into the workflow.
+- **Direct LinkedIn API Integration:** Automate message sending. Potentially use LinkedIn MCP in n8n and Cursor?
+- **Enhanced AI Personalization:** Continuously fine-tuning the AI model to better reflect my communication style. Experiment with different models, prompting, knowledge base, etc.
+- **Integrated Calendar Management:** Automating calendar management. 
 
 ## Conclusion
 
