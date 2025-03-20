@@ -1,0 +1,20 @@
+Main Idea: Professional Networking App to automate and speed up my job search networking workflow.
+
+Context: I am currently searching for my first job. I have a background in economics and data science, went to prestigious schools and got good grades. I am a high achiever and have set my sights on getting a high paying job in tech, ai, consulting or some other exciting, high-paying field. I am looking for data science, product management or ai consulting/solution architect type roles. I am doing a lot of networking, primarily through LinkedIn, with friends, friends of friends, family, and school alumni. 
+
+Current Workflow: My current networking flow is to find an alumni or potential connection who works at a company I'm interested in, or has a job I'm interested in, and connect with them on linkedin. I then send them a message with a quick introduction and asking if they'd be open to a short call. If they say yes, I schedule the call/coffee chat, then create a doc i call my "Conversation Prep Guide" that has my goals for the call, thoughtful, insightful questions to ask, a tailored "about me" section I can reference when i introduce myself, and some background research on the company, their hiring practices (timeline, open roles, desired qualifications, etc.). I then take notes during the call on this doc and then have an llm summarize my notes in a short paragraph and prepare a thank you note/follow up. I store this paragraph, as well as the connection's name, contact info., date of the call, and whether I have sent a thank you in a google sheet.
+
+Goal: My networking workflow is pretty time consuming and repetitive. I want to build an ai agent to help automate it. Importantly however, I want the messages it writes to be in my writing style. Slightly informal, very appreciative, thoughtful, excited/energetic, inquisitive and kind. I can provide the agent information about me like my linkedin, resume, a few cover letters and other "about me" content i have written in the past as well as prior outreach messages i have sent. 
+
+Desired Workflow: 
+Step 1: Manually upload a PDF of the person I want to network with's LinkedIn profile to the app. 
+Step 2: Agent analyzes the profile and uses its knowledge base of my prior outreach messages, resume, and writing samples to draft an outreach message. I then can converse back and forth with the agent to edit the message.
+Step 3: Once I am satisfied with the message, I will approve it. The app should then update my networking tracker Google Sheet with the person's name and the outreach message I approved.
+Step 4: I will manually message the person on LinkedIn.
+Step 5: I will manually respond to and replies and schedule the conversation if applicable.
+Step 6: Once I have the meeting scheduled, I will go into the app and it should help me prepare for the conversation. To do so, it should first prompt me to upload the person's profile again as well as ask me what my goals are for the conversation. Once I have provided these, it should create a "Conversation Prep Guide" that matches the format of the examples I have provided and included in its knowledge base.
+Step 7: It should create this "Conversation Prep Guide" as a google doc and save it in my Google Drive Folder "Informational Interview Notes". It should update my Google Sheets tracker with a link to the Prep Guide for that person.
+Step 8: For during the actual interview, I should be able to turn on a feature in the app that transcribes the conversation and then generates notes from the transcription.
+Step 9: It should then automatically generate a summary of the conversation from the transcription/notes as well as a Thank You/Follow Up Message that I can send to the person.
+Step 10: It should update my Google Sheets tracker with the conversation summary
+Step 11: I will manually send the follow up and update the Google Sheets tracker that the Thank You has been sent. If it has been 12 hours since the call and I have not updated the tracker, the app should email me a reminder to send the thank you.

@@ -1,0 +1,12 @@
+---
+description: How I like to code
+globs: 
+alwaysApply: false
+---
+# Coding workflow preferences
+- Focus on the areas of code relevant to the task
+- Do not touch code that is unrelated to the task
+- Write thorough tests for all major functionality
+- Avoid making major changes to the patterns and architecture of how a feature works, after it has shown to work well, unless explicitly instructed
+- Always think about what other methods and areas of code might be affected by code changes
+- For every major feature, write detailed documentation in a .md file and save to a /docs folder. For every new documentation file, update an overview.md file also saved in /docs that indexes all of the documentation files
