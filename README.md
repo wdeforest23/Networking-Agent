@@ -50,12 +50,16 @@ After some experimenting and process mapping, I developed the following vision f
 
 1. **OpenAI Custom GPT:** [Networking Agent Custom GPT](https://chatgpt.com/g/g-67cc8aab4f28819191b8e061b0f5e91f-networking-agent)
 
-- Prompt: 
-- Knowledge Base:
+![Networking Agent GPT](images/custom_gpt.png)
+
+- Prompt: [GPT Prompt](01_custom_gpt/chatgpt_project_instructions.docx)
+- Knowledge Base: [GPT Knowledge Base](context)
 - Pros:
 - Cons:
 
 2. **n8n Agentic Workflow:**
+
+![n8n Workflow](images/n8n_supervisor_agent_3.19.png)
 
 - Prompt:
 - Knowledge Base:
