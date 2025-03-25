@@ -31,7 +31,7 @@ First, since everyone's networking process is a little different, here is a quic
 
 While effective, this process is labor-intensive and repetitive.
 
-### My Desired Workflow
+## My Desired Workflow
 
 After some experimenting and process mapping, I developed the following vision for my networking workflow.
 
