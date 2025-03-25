@@ -18,3 +18,22 @@ Step 8: For during the actual interview, I should be able to turn on a feature i
 Step 9: It should then automatically generate a summary of the conversation from the transcription/notes as well as a Thank You/Follow Up Message that I can send to the person.
 Step 10: It should update my Google Sheets tracker with the conversation summary
 Step 11: I will manually send the follow up and update the Google Sheets tracker that the Thank You has been sent. If it has been 12 hours since the call and I have not updated the tracker, the app should email me a reminder to send the thank you.
+
+Implementation specifications/ideas:
+- let's just keep the front end simple and use streamlit
+- for the backend, let's use python
+- For the AI agent, let's use Open AI's responses AI and agents SDK. I have a custom gpt i have set up if we can make api calls to that, but if not we can just start from scratch (https://platform.openai.com/docs/api-reference/responses)
+- For the conversation transcription let's use Open AI's new Audio API (https://platform.openai.com/docs/api-reference/audio)
+
+Frontend Design Idea:
+- For now, just a single page
+- 5 main sections
+    1. Chat section: Biggest section, right in the middle, should look like a typical chatbot interface. Input box with an enter button to send the chat, scrollable with previous messages and responses able to be seen above, button to start a new chat, button to start recording (for transcription)
+
+    2. Workflow Tracker Status section: Skinnier section, To the right of the chat section. Should be like a roadmap of the networking workflow with all of the steps laid out in order and an indication as to which step this particular chat is at (outreach, conversation prep, thank you, etc.)
+
+    3. Knowledge Base Section: Top left. Should have a button to add a new document to the knowledge base (should only add it to the knowledge base of the current chat). Should also have a clickable dropdown menu that lists the documents that are currently in the knowledge base. There should be some default documents that are always loaded in the knowledge base for every new chat (like my resume, "About Me", writing samples, etc.), but other documents that are chat-specific that i will need to upload (i.e. the connection's linkedin profile, maybe notes from previous conversations, etc.)
+
+    4. Important links Section. Middle left. Should have links to my LinkedIn profile, my Google Sheets tracker, and my google drive folder where I store my conversation prep guides
+
+    5. Chat History section. bottom left. Should be like how chatGPT has previous chats in a sidebar. I should be able to click on them and open them. They should also have a status indicator that shows where that specific chat is at in the overall workflow (step 2, step 5, etc.)

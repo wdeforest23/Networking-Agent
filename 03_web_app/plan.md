@@ -1,135 +1,144 @@
-# Implementation Plan for Networking Automation Agent
+# Project Plan: Networking Automation Web App
 
-## Project Overview
-A professional networking automation tool that helps streamline the job search networking workflow by automating message drafting, conversation preparation, and follow-up management.
+## Tech Stack
+- Frontend: Streamlit (as requested for simplicity)
+- Backend: Python (FastAPI for API endpoints)
+- Database: SQLite (for initial development, can scale to PostgreSQL later)
+- AI/ML: OpenAI APIs (GPT-4o, Audio API)
+- Cloud Storage: Google Drive API (for docs and sheets integration)
+- Authentication: Google OAuth 2.0
 
-## Technical Stack
-- **Frontend**: React.js with TypeScript
-- **Backend**: Python with FastAPI
-- **Database**: PostgreSQL
-- **AI/ML**: OpenAI GPT-4 API
-- **Cloud Services**: 
-  - Google Cloud Platform (for Google Sheets/Docs integration)
-  - AWS (for transcription services)
-- **Authentication**: OAuth 2.0 (Google, LinkedIn)
+## Project Phases
 
-## Implementation Phases
+### Phase 1: Basic Setup and Infrastructure
+1. Set up development environment
+   - Create GitHub repository
+   - Set up virtual environment
+   - Initialize basic project structure
+   - Set up dependency management (requirements.txt)
 
-### Phase 1: Core Infrastructure Setup
-1. Set up project structure and development environment
-   - Initialize Git repository
-   - Create frontend and backend directories
-   - Set up development, staging, and production environments
-   - Configure CI/CD pipeline
+2. Configure essential APIs and services
+   - OpenAI API integration
+   - Google OAuth setup
+   - Google Drive API setup
+   - Google Sheets API setup
 
-2. Implement basic authentication
-   - Set up Google OAuth integration
-   - Set up LinkedIn OAuth integration
-   - Create user management system
+### Phase 2: Core Backend Development
+1. Create database schema
+   - Users table
+   - Conversations table
+   - Knowledge base documents table
+   - Chat history table
 
-3. Set up database schema
-   - Design and implement user profiles table
-   - Design and implement networking contacts table
-   - Design and implement conversation history table
-   - Design and implement outreach messages table
+2. Implement core API endpoints
+   - Profile analysis endpoint
+   - Message generation endpoint
+   - Conversation prep guide generation
+   - Audio transcription endpoint
 
-### Phase 2: LinkedIn Profile Analysis
-1. Create PDF processing system
-   - Implement PDF text extraction
-   - Create structured data parser for LinkedIn profiles
-   - Build profile data storage system
+3. Develop AI interaction layer
+   - Profile analysis logic
+   - Message generation with style matching
+   - Conversation prep guide generation
+   - Transcription processing
 
-2. Develop AI message generation system
-   - Create system for storing and analyzing user's writing samples
-   - Implement prompt engineering for message generation
-   - Build message editing interface
-   - Create message approval workflow
+### Phase 3: Streamlit Frontend Development
+1. Main layout implementation
+   - Chat interface
+   - Workflow tracker
+   - Knowledge base section
+   - Important links section
+   - Chat history sidebar
 
-### Phase 3: Google Integration
-1. Implement Google Sheets integration
-   - Set up Google Sheets API
-   - Create networking tracker template
-   - Implement automatic updates to tracker
-   - Add manual override capabilities
+2. Core functionality implementation
+   - File upload system
+   - Chat interface
+   - Audio recording interface
+   - Document preview
+   - Status tracking
 
-2. Implement Google Docs integration
-   - Set up Google Docs API
-   - Create conversation prep guide template
-   - Implement automatic document creation
-   - Add document linking system
+### Phase 4: Google Integration
+1. Google Sheets integration
+   - Networking tracker updates
+   - Status tracking
+   - Thank you reminder system
 
-### Phase 4: Conversation Preparation
-1. Build conversation prep guide generator
-   - Create system for goal collection
-   - Implement AI-powered question generation
-   - Build company research integration
-   - Create document formatting system
+2. Google Docs integration
+   - Conversation prep guide creation
+   - Note storage
+   - Document management
 
-2. Implement real-time transcription
-   - Set up AWS Transcribe integration
-   - Create real-time transcription interface
-   - Implement note-taking system
-   - Build transcription storage system
+### Phase 5: AI Features
+1. Message generation system
+   - Style matching from examples
+   - Interactive editing
+   - Template management
 
-### Phase 5: Follow-up Management
-1. Create conversation summary system
-   - Implement AI-powered summary generation
-   - Create thank you note generator
-   - Build follow-up reminder system
-   - Implement email notification system
+2. Conversation assistance
+   - Real-time transcription
+   - Note generation
+   - Summary creation
+   - Follow-up message generation
 
-2. Build tracking system
-   - Create follow-up status tracking
-   - Implement reminder scheduling
-   - Add manual status updates
-   - Create reporting dashboard
+### Phase 6: Testing and Refinement
+1. Unit testing
+2. Integration testing
+3. User testing
+4. Performance optimization
+5. Security review
 
-### Phase 6: Testing and Optimization
-1. Implement comprehensive testing
-   - Unit tests for all components
-   - Integration tests for external services
-   - End-to-end testing
-   - Performance testing
+## Implementation Priority Order
+1. Basic Streamlit interface with chat
+2. Profile analysis and message generation
+3. Google Sheets integration
+4. Conversation prep guide generation
+5. Audio transcription and processing
+6. Thank you message generation and reminder system
 
-2. Optimize and refine
-   - Performance optimization
-   - User experience improvements
-   - Error handling enhancement
-   - Security hardening
+## Initial Development Timeline
+- Phase 1: 1-2 days
+- Phase 2: 3-4 days
+- Phase 3: 2-3 days
+- Phase 4: 2-3 days
+- Phase 5: 3-4 days
+- Phase 6: 2-3 days
 
-### Phase 7: Deployment and Documentation
-1. Prepare for deployment
-   - Set up production environment
-   - Configure monitoring and logging
-   - Implement backup systems
-   - Create deployment documentation
+Total estimated timeline: 2-3 weeks for MVP
 
-2. Create user documentation
-   - User manual
-   - API documentation
-   - Troubleshooting guide
-   - FAQ section
+## First Steps to Begin
+1. Set up project repository and environment
+2. Create basic Streamlit app structure
+3. Implement OpenAI API integration
+4. Build basic chat interface
+5. Implement file upload for LinkedIn profiles
 
-## Timeline Estimation
-- Phase 1: 2 weeks
-- Phase 2: 3 weeks
-- Phase 3: 2 weeks
-- Phase 4: 3 weeks
-- Phase 5: 2 weeks
-- Phase 6: 2 weeks
-- Phase 7: 1 week
+Would you like to proceed with this plan? We can adjust any aspects before starting the implementation. 
 
-Total estimated timeline: 15 weeks
 
-## Key Technical Considerations
-1. **Data Privacy**: Implement robust security measures for handling personal and professional data
-2. **API Rate Limits**: Careful management of external API calls (OpenAI, Google, LinkedIn)
-3. **Scalability**: Design system to handle multiple users and concurrent operations
-4. **Error Handling**: Comprehensive error handling for external service failures
-5. **User Experience**: Focus on intuitive interface and smooth workflow
-
-## Next Steps
-1. Review and approve implementation plan
-2. Set up development environment
-3. Begin Phase 1 implementation
-4. Regular progress reviews and adjustments 
+## Project Structure
+03_web_app/
+├── venv/                  # Already exists
+├── app/
+│   ├── __init__.py
+│   ├── main.py           # Main Streamlit application
+│   ├── api/
+│   │   ├── __init__.py
+│   │   └── endpoints.py
+│   ├── core/
+│   │   ├── __init__.py
+│   │   ├── config.py
+│   │   └── security.py
+│   ├── models/
+│   │   ├── __init__.py
+│   │   └── database.py
+│   └── utils/
+│       ├── __init__.py
+│       ├── openai_helper.py
+│       └── google_helper.py
+├── tests/
+│   └── __init__.py
+├── .env                   # Environment variables
+├── .gitignore            # Git ignore file
+├── requirements.txt      # Python dependencies
+├── README.md            # Project documentation
+└── plan.md              # Already exists
